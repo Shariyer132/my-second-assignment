@@ -196,10 +196,17 @@ margin-bottom: 0px;
     background: #FFF;
     width: 231px;
     height: 80px;
+    justify-content: center;
 }
 .game-section{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
+.game-container div:hover, 
+.game-container-two div:hover{
+   border:1px solid #F948B2;
+   color:#F948B2;
+}
+
 
 
 .game-container,
@@ -216,16 +223,74 @@ margin-bottom: 0px;
     padding: 0px 120px 100px 100px;
     
 }
-/*footer section styles*/
 
+
+.any-text-container {
+    padding-top: 0px}
+/*footer section styles*/
+   footer{
+    background: #0B0223;
    
+   }
+.footer-section{
+    display: block;
+    width: 1920px;
+    height: 636px;
+}
+   .footer-title{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+padding-left: 20px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer li{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 18px;
+font-weight: 600;
+padding-right: 50px;
+margin-bottom: 60px;
+list-style: none;
+}
+footer ul li a img{
+    width: 57.13px;
+    height: 40px;
+    border-radius: 25px; 
+}
+.footer-text{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Work Sans;
+text-align: center;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+font-weight: 500;
+border: 1px solid;
+border-image: linear-gradient(to right,transparent,rgba(128, 128, 128, 0.438),transparent);
+border-left: 0px;
+border-right: 0px;
+border-image-slice: 1;
+padding-top: 40px;
+}
+.text{
+    padding-bottom: 40px;
+}
 /*responsive for small devices*/
 @media screen and (max-width:576px) {
     .nav-container,
     nav ul,
     .gamer,
     .funny-img-container,
-    .any-section{
+    .any-section,
+    .game-container,
+    .game-container-two,
+    footer ul{
         flex-direction: column;
     }
     nav{
@@ -257,12 +322,10 @@ margin-bottom: 0px;
     }
     
     .any-section img{
-        width: 100%;
         padding: 0px;
     }
-    .any-small-img{
-        position: static;
-        max-width: 200px;
+    #any-big-img{
+        width: 100%;
     }
     .any-section{
         padding: 30px;
@@ -272,6 +335,10 @@ margin-bottom: 0px;
     }
     .any-text-container{
         text-align: center;
+    }
+    .any-small-img{
+        position: static;
+        width: 200px;
     }
 }
 /*resposive for medium devices*/
@@ -298,5 +365,20 @@ margin-bottom: 0px;
     }
     .any-text-container{
         text-align: center;
+    }
+    .game-container, .game-container-two{
+        flex-direction: column;
+    }
+    .any-img{
+        width: auto;
+        
+    }
+    .any-small-img{
+        align-items: first baseline;
+        position: relative;
+        left: 50px;
+    }
+    .any-section{
+        padding: 0px;
     }
 }
