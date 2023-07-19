@@ -149,6 +149,10 @@ margin-bottom: 0px;
    padding:100px 200px ;
 }
 .funny-header{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
 }
 .funny-img-container{
     display:flex;
@@ -166,13 +170,30 @@ margin-bottom: 0px;
     line-height: 30px;
     text-align: left;
 }
-/*an
+/*any section styles*/
+.any-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    
+}
+
+.any-text-container{
+    padding-top: 200px;
+}
+.any-small-img{
+    border-radius: 8px;
+    position: relative;
+    left: 530px;
+    bottom: 240px;
+}
 /*responsive for small devices*/
 @media screen and (max-width:576px) {
     .nav-container,
     nav ul,
     .gamer,
-    .funny-img-container{
+    .funny-img-container,
+    .any-section{
         flex-direction: column;
     }
     nav{
@@ -203,13 +224,31 @@ margin-bottom: 0px;
         align-items: center;
     }
     
+    .any-section img{
+        width: 100%;
+        padding: 0px;
+    }
+    .any-small-img{
+        position: static;
+        max-width: 200px;
+    }
+    .any-section{
+        padding: 30px;
+    }
+    .any-img{
+        padding-left: 0px;
+    }
+    .any-text-container{
+        text-align: center;
+    }
 }
 /*resposive for medium devices*/
 @media  screen and (min-width:576px) and (max-width: 996px) {
     .nav-container,
     nav ul,
     .gamer,
-    .funny-img-container{
+    .funny-img-container,
+    .any-section{
         flex-direction: column;
     }
     nav li{
@@ -224,5 +263,8 @@ margin-bottom: 0px;
     .play-container,
     .play-img{
         padding: 0px;
+    }
+    .any-text-container{
+        text-align: center;
     }
 }
