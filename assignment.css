@@ -85,6 +85,7 @@ nav li img{
     background-image: url(./images/Group\ 14.png);
     background-repeat: no-repeat;
     width: 100%;
+    padding-bottom: 100px;
 }
 .play-head{
     color: #0B0223;
@@ -216,6 +217,7 @@ margin-bottom: 0px;
     display: flex;
     margin: 50px 200px;
     justify-content: space-around;
+    gap: 100px;
 }
 .plays-text{
     color: #534C64;
@@ -239,6 +241,7 @@ margin-bottom: 0px;
 .plays-text-container{
     text-align: right;
     padding-top: 100px;
+   
 }
 .small-img{
     position: relative;
@@ -368,6 +371,7 @@ padding-top: 40px;
     }
     .play-container{
         padding-left:8px;
+        padding-bottom: 10px;
     }
     .play-section{
         flex-direction: column-reverse;
@@ -407,10 +411,6 @@ padding-top: 40px;
     footer ul{
         display: grid;
         grid-template-columns: repeat(2,2fr);
-    }
-   
-    footer a img{
-       
     }
 }
 
