@@ -319,10 +319,12 @@ padding-right: 50px;
 margin-bottom: 60px;
 list-style: none;
 }
-footer ul li a img{
+footer  a img{
+    justify-content: space-around;
     width: 57.13px;
     height: 40px;
     border-radius: 25px; 
+    gap: 20px;
 }
 .footer-text{
     color: rgba(255, 255, 255, 0.60);
@@ -342,6 +344,11 @@ padding-top: 40px;
 .text{
     padding-bottom: 40px;
 }
+#footerimage{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 /*responsive for small devices*/
 @media screen and (max-width:576px) {
     .nav-container,
@@ -350,8 +357,7 @@ padding-top: 40px;
     .funny-img-container,
     .plays-section,
     .game-container,
-    .game-container-two,
-    footer ul{
+    .game-container-two{
         flex-direction: column;
     }
     nav{
@@ -398,6 +404,14 @@ padding-top: 40px;
         top: 10px;
         bottom: 10px;
     }
+    footer ul{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+   
+    footer a img{
+       
+    }
 }
 
 /*resposive for medium devices*/
@@ -405,6 +419,7 @@ padding-top: 40px;
     .nav-container,
     nav ul,
     .gamer,
+    .plays-section,
     .funny-img-container{
         flex-direction: column;
     }
@@ -423,7 +438,10 @@ padding-top: 40px;
     }
     
     .game-container, .game-container-two{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
     }
-    
+    .plays-section {
+        margin: 0px 123px;
+    }
 }
